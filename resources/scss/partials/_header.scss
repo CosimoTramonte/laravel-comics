@@ -25,6 +25,13 @@
             height: 100%;
             border-bottom: 5px solid white;
 
+            &:hover{
+                border-bottom: 5px solid $primary-color;
+                a{
+                    color: $primary-color;
+                }
+            }
+
             &.active {
                 border-bottom: 5px solid $primary-color;
                 a{

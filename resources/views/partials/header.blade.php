@@ -11,7 +11,7 @@
 
             @foreach ($menu_header as $items)
 
-                <li><a href="{{ route($items['name']) }}" class="{{Route::currentRouteName() === $items['text'] ? 'active' : ''}}">{{ $items['text'] }}</a></li>
+                <li class="{{Route::currentRouteName() == $items['name'] ? 'active' : ''}}"><a href="{{ route($items['name']) }}" >{{ $items['text'] }}</a></li>
 
             @endforeach
         </ul>
