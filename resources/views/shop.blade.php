@@ -2,6 +2,6 @@
 
 @section('content')
 
-    <h2>MOVIES</h2>
+    <h2>SHOP</h2>
 
 @endsection
