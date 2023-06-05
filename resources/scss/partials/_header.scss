@@ -1,0 +1,42 @@
+
+
+.header-container{
+    @include centerFlex("vertical");
+    justify-content: space-between;
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+
+    img{
+      height: 100%;
+      padding: 10px;
+    }
+
+    ul{
+      @include centerFlex("both");
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+
+        li {
+            list-style: none;
+            @include centerFlex("vertical");
+            padding: 10px;
+            height: 100%;
+            border-bottom: 5px solid white;
+
+            &.active {
+                border-bottom: 5px solid $primary-color;
+                a{
+                    color: $primary-color;
+                }
+            }
+
+            a{
+                text-decoration: none;
+                color: $secondary-color;
+                font-size: 13px;
+            }
+        }
+    }
+  }

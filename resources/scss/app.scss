@@ -1,20 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 
-.row {
-    > * {
-        height: 100vh;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        color: lightcoral;
-        background-color: aquamarine;
-        background-image: url('../img/laravel.png');
-        background-size: 50px 50px;
-    }
-}
-
-img {
-    max-height: 150px;
-}
+@import "./partials/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "./partials/general";
+@import "./partials/mixin";
+@import "./partials/header";
+@import "./partials/jumbotron";
+@import "./partials/footer";
