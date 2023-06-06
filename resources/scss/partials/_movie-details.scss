@@ -1,0 +1,60 @@
+.main-container{
+    background-color: $secondary-color;
+    color: white;
+    min-height: 150px;
+    padding-bottom: 40px;
+
+    .card-container{
+      width: 80%;
+      margin: 0 auto;
+      position: relative;
+      padding: 50px 0 20px 0;
+
+
+        .tag-series{
+            position: absolute;
+            background-color: $primary-color;
+            padding: 10px;
+            top: -20px;
+        }
+
+        .imgContainer{
+            margin: 0 auto;
+            width: 50%;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .infoDiv{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p{
+                text-align: center;
+            }
+
+            h6{
+                font-weight: 800;
+                color: $primary-color;
+            }
+        }
+
+        .button-container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .movies-button{
+                display: inline-block;
+                background-color: $primary-color;
+                padding: 10px;
+            }
+        }
+
+    }
+}

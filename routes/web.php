@@ -53,6 +53,14 @@ Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
 
-Route::get('/movie-details', function () {
-    return view('movie-details');
+Route::get('/movie-details/{slug}', function ($slug) {
+
+
+    $movies = config('movies');
+
+    $moviesFilter_array = array_filter($movies, fn($movie) => $movie['slug'] === $slug);
+
+    $movieChosen = $moviesFilter_array[array_key_first($moviesFilter_array)];
+
+    return view('movie-details', compact('movieChosen'));
 })->name('movie-details');

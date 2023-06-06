@@ -18,7 +18,7 @@
 
 
                 <div class="serie">
-                    <a class="text-white text-decoration-none" href="{{ route('movie-details')}}">
+                    <a class="text-white text-decoration-none" href="{{ route('movie-details', ['slug' => $card['slug']])}}">
                         <div>
                             <img src="{{ $card['thumb'] }}" alt={{ $card['title'] }}">
                         </div>
