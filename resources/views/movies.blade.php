@@ -16,12 +16,16 @@
 
             @foreach ($movies_card as $card)
 
+
                 <div class="serie">
-                    <div>
-                        <img src="{{ $card['thumb'] }}" alt={{ $card['title'] }}">
-                    </div>
-                    <h5>{{ $card['title'] }}</h5>
+                    <a class="text-white text-decoration-none" href="{{ route('movie-details')}}">
+                        <div>
+                            <img src="{{ $card['thumb'] }}" alt={{ $card['title'] }}">
+                        </div>
+                        <h5>{{ $card['title'] }}</h5>
+                    </a>
                 </div>
+
 
             @endforeach
 

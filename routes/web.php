@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/movies', function () {
+Route::get('/', function () {
     return view('movies');
 })->name('movies');
 
@@ -52,3 +52,7 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
+
+Route::get('/movie-details', function () {
+    return view('movie-details');
+})->name('movie-details');
