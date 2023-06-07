@@ -60,7 +60,15 @@ Route::get('/movie-details/{slug}', function ($slug) {
 
     $moviesFilter_array = array_filter($movies, fn($movie) => $movie['slug'] === $slug);
 
+    if(empty($moviesFilter_array)){
+        return to_route('movies');
+
+        //genero 404
+        //abort(404);
+    }
+
     $movieChosen = $moviesFilter_array[array_key_first($moviesFilter_array)];
+
 
     return view('movie-details', compact('movieChosen'));
 })->name('movie-details');
